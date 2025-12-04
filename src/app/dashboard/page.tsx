@@ -1,4 +1,3 @@
-```
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Overview, RecentActivity } from "@/components/modules/dashboard/dashboard-charts"
 
@@ -68,4 +67,3 @@ export default function DashboardPage() {
     </div>
   )
 }
-```
