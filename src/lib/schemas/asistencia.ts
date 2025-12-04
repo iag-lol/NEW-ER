@@ -7,7 +7,7 @@ export const noMarcacionSchema = z.object({
     terminal: z.string().min(1, "Terminal es obligatorio"),
     turno: z.string().min(1, "Turno es obligatorio"),
     tipo: z.enum(["ENTRADA", "SALIDA"], {
-        errorMap: () => ({ message: "Seleccione el tipo de marcación" }),
+        message: "Seleccione el tipo de marcación",
     }),
     fecha: z.string().min(1, "Fecha es obligatoria"),
     hora: z.string().min(1, "Hora es obligatoria"),
