@@ -3,98 +3,104 @@
 @theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  
+
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
-  
+
   --color-popover: var(--popover);
   --color-popover-foreground: var(--popover-foreground);
-  
+
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
-  
+
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
-  
+
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
-  
+
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
-  
+
   --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
-  
+
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  
+
   --radius-lg: var(--radius);
   --radius-md: calc(var(--radius) - 2px);
   --radius-sm: calc(var(--radius) - 4px);
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #09090b;
-  
+  /* Corporate Logistics Palette - Light Mode Forced */
+
+  /* Backgrounds: Slate-50 for main app background to create depth */
+  --background: #f8fafc;
+  /* Foreground: Slate-900 for sharp text */
+  --foreground: #0f172a;
+
+  /* Cards: Pure White to pop against the Slate-50 background */
   --card: #ffffff;
-  --card-foreground: #09090b;
-  
+  --card-foreground: #0f172a;
+
   --popover: #ffffff;
-  --popover-foreground: #09090b;
-  
-  --primary: #18181b;
-  --primary-foreground: #fafafa;
-  
-  --secondary: #f4f4f5;
-  --secondary-foreground: #18181b;
-  
-  --muted: #f4f4f5;
-  --muted-foreground: #71717a;
-  
-  --accent: #f4f4f5;
-  --accent-foreground: #18181b;
-  
-  --destructive: #ef4444;
-  --destructive-foreground: #fafafa;
-  
-  --border: #e4e4e7;
-  --input: #e4e4e7;
-  --ring: #18181b;
-  
+  --popover-foreground: #0f172a;
+
+  /* Primary: Blue-600 - Professional, Trustworthy */
+  --primary: #2563eb;
+  --primary-foreground: #ffffff;
+
+  /* Secondary: Slate-100 */
+  --secondary: #f1f5f9;
+  --secondary-foreground: #0f172a;
+
+  /* Muted: Slate-100 */
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+  /* Slate-500 */
+
+  /* Accent: Blue-50 for hover states */
+  --accent: #eff6ff;
+  --accent-foreground: #1e40af;
+  /* Blue-800 */
+
+  /* Destructive: Red-600 */
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+
+  /* Borders: Slate-200 */
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  --ring: #2563eb;
+
   --radius: 0.5rem;
 }
 
+/* Dark mode overrides kept but effectively disabled by layout config if forced to light */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #09090b;
-    --foreground: #fafafa;
-    
-    --card: #09090b;
-    --card-foreground: #fafafa;
-    
-    --popover: #09090b;
-    --popover-foreground: #fafafa;
-    
-    --primary: #fafafa;
-    --primary-foreground: #18181b;
-    
-    --secondary: #27272a;
-    --secondary-foreground: #fafafa;
-    
-    --muted: #27272a;
-    --muted-foreground: #a1a1aa;
-    
-    --accent: #27272a;
-    --accent-foreground: #fafafa;
-    
+    --background: #020617;
+    --foreground: #f8fafc;
+    --card: #020617;
+    --card-foreground: #f8fafc;
+    --popover: #020617;
+    --popover-foreground: #f8fafc;
+    --primary: #3b82f6;
+    --primary-foreground: #0f172a;
+    --secondary: #1e293b;
+    --secondary-foreground: #f8fafc;
+    --muted: #1e293b;
+    --muted-foreground: #94a3b8;
+    --accent: #1e293b;
+    --accent-foreground: #f8fafc;
     --destructive: #7f1d1d;
-    --destructive-foreground: #fafafa;
-    
-    --border: #27272a;
-    --input: #27272a;
-    --ring: #d4d4d8;
+    --destructive-foreground: #f8fafc;
+    --border: #1e293b;
+    --input: #1e293b;
+    --ring: #1d4ed8;
   }
 }
 
